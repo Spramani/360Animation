@@ -1,0 +1,16 @@
+PODS:
+  - ShyView (0.1.0)
+
+DEPENDENCIES:
+  - ShyView
+
+SPEC REPOS:
+  trunk:
+    - ShyView
+
+SPEC CHECKSUMS:
+  ShyView: 6a5b80348b56f3d5d9b1a342374eb5f265df5a7c
+
+PODFILE CHECKSUM: bd72677044264e2c71fb7b659ffdc7044f1c0bfd
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Simple3DGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="ux3-Yt-DjK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GF-Vs-KwU">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFl-0I-Eeb">
+                                <rect key="frame" x="165.66666666666666" y="109" width="61.666666666666657" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jvh-HO-wo1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jvh-HO-wo1" firstAttribute="trailing" secondItem="0GF-Vs-KwU" secondAttribute="trailing" id="QPN-zO-AlR"/>
+                            <constraint firstItem="uFl-0I-Eeb" firstAttribute="centerX" secondItem="ux3-Yt-DjK" secondAttribute="centerX" id="ZFR-GM-DXN"/>
+                            <constraint firstItem="uFl-0I-Eeb" firstAttribute="top" secondItem="jvh-HO-wo1" secondAttribute="top" constant="50" id="alT-je-9bA"/>
+                            <constraint firstItem="0GF-Vs-KwU" firstAttribute="leading" secondItem="jvh-HO-wo1" secondAttribute="leading" id="fTX-2n-7Gx"/>
+                            <constraint firstAttribute="bottom" secondItem="0GF-Vs-KwU" secondAttribute="bottom" id="g4c-dg-TdJ"/>
+                            <constraint firstItem="0GF-Vs-KwU" firstAttribute="top" secondItem="ux3-Yt-DjK" secondAttribute="top" id="z7C-yb-yAj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameView" destination="0GF-Vs-KwU" id="36f-cw-cLu"/>
+                        <outlet property="score" destination="uFl-0I-Eeb" id="6y3-Lb-JHf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
